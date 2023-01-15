@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@font-face {
+  font-family: 'Formular';
+  src: local("Formular Medium"), local("Formular-Medium"), url("Formular-Medium.woff2") format("woff2"), url("Formular-Medium.woff") format("woff"), url("Formular-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: 'Formular';
+  src: local("Formular Regular"), local("Formular-Regular"), url("Formular.woff2") format("woff2"), url("Formular.woff") format("woff"), url("Formular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: local("Basis Grotesque Pro Regular"), local("Basis-Grotesque-Pro-Regular"), url("BasisGrotesquePro-Regular.woff2") format("woff2"), url("BasisGrotesquePro-Regular.woff") format("woff"), url("BasisGrotesquePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: local("Basis Grotesque Pro Bold"), local("Basis-Grotesque-Pro-Bold"), url("BasisGrotesquePro-Bold.woff2") format("woff2"), url("BasisGrotesquePro-Bold.woff") format("woff"), url("BasisGrotesquePro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  display: swap;
+}
+/*Обнуление*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #424551;
+}
+
+._container {
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*Menu Burger*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 0 15px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #77608d;
+  z-index: 2;
+}
+
+.header .container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  z-index: 3;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.header__list li {
+  margin-left: 20px;
+}
+
+.header__list li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .header__burger.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #18b5a4;
+    padding: 70px 0 0 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__body {
+    height: 50px;
+  }
+
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+  }
+
+  .header__list {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
