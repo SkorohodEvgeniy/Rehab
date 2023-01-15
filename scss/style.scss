@@ -260,7 +260,8 @@ body {
     overflow: hidden;
   }
   .header__burger {
-    display: block;
+    display: flex;
+    order: 3;
     position: relative;
     width: 30px;
     height: 20px;
@@ -323,13 +324,42 @@ body {
   .header__body {
     flex-wrap: wrap;
     height: auto;
+    padding-top: 9px;
+    padding-bottom: 20px;
   }
   .header__logo {
-    flex: 0 0 40px;
+    flex: 0 0 20%;
+    display: flex;
+    order: 1;
   }
   .header__list {
     display: block;
   }
+  .header {
+    ._container {
+      padding: 0 15px;
+    }
+    &__text{
+      flex: 0 0 68%;
+      display: flex;
+      order: 2;
+      flex-direction: column;
+    }
+    &__btn{
+      display: flex;
+      order: 4;
+      margin-top: 31px;
+    }
+    &__phone{
+      order: 5;
+      padding: 0 15px;
+      border: none;
+      margin-top: 31px;
+    }
+    &__lang{
+      display: none;
+    }
+  } 
 }
 
 /*----Footer down (Липкий Footer)---------*/
