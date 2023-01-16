@@ -2,28 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @font-face {
   font-family: 'Formular';
-  src: local("Formular Medium"), local("Formular-Medium"), url("Formular-Medium.woff2") format("woff2"), url("Formular-Medium.woff") format("woff"), url("Formular-Medium.ttf") format("truetype");
+  src: local("Formular Medium"), local("Formular-Medium"), url("/fonts/formular/Formular-Medium.woff2") format("woff2"), url("/fonts/formular/Formular-Medium.woff") format("woff"), url("/fonts/formular/Formular-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   display: swap;
 }
 @font-face {
   font-family: 'Formular';
-  src: local("Formular Regular"), local("Formular-Regular"), url("Formular.woff2") format("woff2"), url("Formular.woff") format("woff"), url("Formular.ttf") format("truetype");
+  src: local("Formular Regular"), local("Formular-Regular"), url("/fonts/formular/Formular.woff2") format("woff2"), url("/fonts/formular/Formular.woff") format("woff"), url("/fonts/formular/Formular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   display: swap;
 }
 @font-face {
   font-family: 'Basis Grotesque Pro';
-  src: local("Basis Grotesque Pro Regular"), local("Basis-Grotesque-Pro-Regular"), url("BasisGrotesquePro-Regular.woff2") format("woff2"), url("BasisGrotesquePro-Regular.woff") format("woff"), url("BasisGrotesquePro-Regular.ttf") format("truetype");
+  src: local("Basis Grotesque Pro Regular"), local("Basis-Grotesque-Pro-Regular"), url("/fonts/grotesque/BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/grotesque/BasisGrotesquePro-Regular.woff") format("woff"), url("/fonts/grotesque/BasisGrotesquePro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   display: swap;
 }
 @font-face {
   font-family: 'Basis Grotesque Pro';
-  src: local("Basis Grotesque Pro Bold"), local("Basis-Grotesque-Pro-Bold"), url("BasisGrotesquePro-Bold.woff2") format("woff2"), url("BasisGrotesquePro-Bold.woff") format("woff"), url("BasisGrotesquePro-Bold.ttf") format("truetype");
+  src: local("Basis Grotesque Pro Bold"), local("Basis-Grotesque-Pro-Bold"), url("/fonts/grotesque/BasisGrotesquePro-Bold.woff2") format("woff2"), url("/fonts/grotesque/BasisGrotesquePro-Bold.woff") format("woff"), url("/fonts/grotesque/BasisGrotesquePro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   display: swap;
@@ -139,16 +139,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
+  min-height: 85px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60px;
-          flex: 0 0 60px;
+      -ms-flex: 0 0 89px;
+          flex: 0 0 89px;
   z-index: 3;
   margin-right: 10px;
 }
@@ -159,6 +161,8 @@ body {
   display: flex;
   z-index: 2;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__list li {
@@ -175,6 +179,9 @@ body {
   padding-top: 100px;
 }
 
+.header hr {
+  display: none;
+}
 .header__burger {
   display: none;
 }
@@ -182,15 +189,15 @@ body {
   position: relative;
   z-index: 2;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 22%;
-          flex: 0 1 22%;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
 }
 .header__text-title {
   font-family: 'Basis Grotesque Pro';
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  line-height: 28px;
+  line-height: calc(28 / 15 * 100%);
   color: #0069B4;
 }
 .header__text-subtitle {
@@ -198,7 +205,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
+  line-height: calc(15 / 15 * 100%);
   color: #898989;
 }
 .header__btn {
@@ -332,8 +339,13 @@ body {
   position: absolute;
   display: inline-block;
 }
+.header__lang ul:hover li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
   }
@@ -468,7 +480,6 @@ body {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
-    margin-top: 31px;
   }
   .header__phone {
     -webkit-box-ordinal-group: 6;
@@ -476,10 +487,33 @@ body {
             order: 5;
     padding: 0 15px;
     border: none;
-    margin-top: 31px;
   }
   .header__lang {
     display: none;
+  }
+  .header hr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin: 9px 0 19px 0;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    z-index: 3;
+  }
+}
+@media (max-width: 345px) {
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 15%;
+            flex: 0 1 15%;
+  }
+  .header__text-title {
+    font-size: 16px;
   }
 }
 /*----Footer down (Липкий Footer)---------*/

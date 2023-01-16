@@ -91,11 +91,12 @@ body {
 .header__body {
   position: relative;
   display: flex;
-  height: 80px;
+  min-height: 85px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .header__logo {
-  flex: 0 0 60px;
+  flex: 0 0 89px;
   z-index: 3;
   margin-right: 10px;
 }
@@ -103,6 +104,7 @@ body {
   display: flex;
   z-index: 2;
   position: relative;
+  flex-wrap: wrap;
 }
 .header__list li {
   margin-left: 50px;
@@ -116,19 +118,21 @@ body {
   padding-top: 100px;
 }
 .header{
+  hr{display: none;}
+
   &__burger {
     display: none;
   }
   &__text{
     position: relative;
     z-index: 2;
-    flex: 0 1 22%;
+    flex: 0 1 24%;
     &-title{
       font-family: 'Basis Grotesque Pro';
       font-style: normal;
       font-weight: 700;
       font-size: 22px;
-      line-height: 28px;
+      line-height: calc(28 / 15 * 100%);
       color: #0069B4;
     }
     &-subtitle{
@@ -136,7 +140,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: calc(15 / 15 * 100%);
     color: #898989;
     }
   }
@@ -224,38 +228,45 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  ul li{
-    position: relative;
-    &:not(:first-child){
-      display: none;
-      position: absolute;
-      border-radius: 0 0 4px 4px;
-      width: 94px;
-      height: 94px;
-      bottom: -94px;
-      left: 0;
-      justify-content: center;
-      align-items: center;
-      a{
-
-        color: #FFB800;
+  ul{
+    li{
+      position: relative;
+      &:not(:first-child){
+        display: none;
+        position: absolute;
+        border-radius: 0 0 4px 4px;
+        width: 94px;
+        height: 94px;
+        bottom: -94px;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        a{
+  
+          color: #FFB800;
+        }
+      }
+      &:first-child::after{
+        content: url(/img/svg/down_arrow_lan.svg);
+        width: 7px;
+        height: 4px;
+        right: -10px;
+        top: -2px;
+        position: absolute;
+        display: inline-block;
       }
     }
-    &:first-child::after{
-      content: url(/img/svg/down_arrow_lan.svg);
-      width: 7px;
-      height: 4px;
-      right: -10px;
-      top: -2px;
-      position: absolute;
-      display: inline-block;
+    &:hover{
+      li {
+        display: flex;
+      }
     }
-  }
+  } 
 }
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
   }
@@ -348,20 +359,37 @@ body {
     &__btn{
       display: flex;
       order: 4;
-      margin-top: 31px;
     }
     &__phone{
       order: 5;
       padding: 0 15px;
       border: none;
-      margin-top: 31px;
     }
     &__lang{
       display: none;
     }
+    hr {
+      display: flex;
+      order: 4;
+      margin: 9px 0 19px 0;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      flex: 0 1 100%;
+      z-index: 3;
+    }
   } 
 }
-
+@media(max-width:345px){
+  .header{
+    &__logo{
+      flex: 0 1 15%;
+    }
+    &__text{
+      &-title{
+        font-size: 16px;
+      }
+    }
+  }
+}
 /*----Footer down (Липкий Footer)---------*/
  
 .wrapper {
