@@ -276,9 +276,12 @@ body {
   position: relative;
   display: flex;
 
-  img{
+  &__img{
     position: absolute;
     right: 0;
+  }
+  &__image{
+    object-fit: cover;
   }
 
   &__container{
@@ -291,6 +294,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex: 0 1 50%;
+    z-index: 4;
   }
   &__title{
     font-weight: 800;
