@@ -176,7 +176,7 @@ body {
 }
 
 .main {
-  padding-top: 100px;
+  padding-top: 85px;
 }
 
 .header hr {
@@ -345,6 +345,112 @@ body {
   display: flex;
 }
 
+/*-------------First Screen--------------------*/
+.first {
+  background-color: #0069b438;
+  min-height: 622px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.first img {
+  position: absolute;
+  right: 0;
+}
+.first__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.first__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+.first__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 26px;
+}
+.first__title span {
+  color: #0069B4;
+}
+.first__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #313131;
+  margin-bottom: 26px;
+}
+.first .link-portal {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #0069B4;
+  border-radius: 3px;
+  min-height: 39px;
+  width: 206px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 26px;
+}
+.first .link-start {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: calc(52 / 15 * 100%);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  min-height: 56px;
+  width: 223px;
+}
+
+/*----Footer down (Липкий Footer)---------*/
+.wrapper {
+  min-height: 100%;
+  /*Magic*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Magic*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*Magic*/
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  /*Magic*/
+}
+
+/*---------------------------*/
 @media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
@@ -527,26 +633,3 @@ body {
             flex: 1 0 68%;
   }
 }
-/*----Footer down (Липкий Footer)---------*/
-.wrapper {
-  min-height: 100%;
-  /*Magic*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*Magic*/
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /*Magic*/
-}
-
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  /*Magic*/
-}
-
-/*---------------------------*/
