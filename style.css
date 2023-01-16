@@ -472,6 +472,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .header__btn {
     display: -webkit-box;
@@ -506,14 +507,24 @@ body {
     z-index: 3;
   }
 }
+@media (max-width: 560px) {
+  .header__text {
+    text-align: start;
+  }
+}
 @media (max-width: 345px) {
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 15%;
-            flex: 0 1 15%;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    display: inline-block;
+    text-align: center;
   }
   .header__text-title {
     font-size: 16px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 68%;
+            flex: 1 0 68%;
   }
 }
 /*----Footer down (Липкий Footer)---------*/
