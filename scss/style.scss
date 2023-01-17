@@ -350,8 +350,30 @@ body {
   }
 }
 
-
-
+/*-----------------Cources-----------------------*/
+.cources{
+  padding: 75px 0;
+  &__heading{
+    margin: 0 auto;
+    margin-bottom: 35px;
+    &-subtitle{
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #333333;
+      text-align: center;
+    }
+    &-title{
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 130%;
+      text-align: center;
+      color: #1E212C;
+    }
+  }
+}
 
 /*----Footer down (Липкий Footer)---------*/
  
