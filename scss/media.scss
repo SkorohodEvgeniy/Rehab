@@ -1,6 +1,6 @@
 /*--------Min Width----------------------*/
 
-@media(min-width: 768px) {
+@media(min-width: 769px) {
   .cources {
     &__content {
       &-img {
@@ -273,7 +273,7 @@
       &-text {
 
         &--title {
-          font-size: 36px;
+          font-size: 40px;
         }
       }
     }
@@ -303,6 +303,10 @@
     &__content {
 
       &-text {
+        margin-bottom: 31px;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
 
         &--title {
           font-size: 36px;

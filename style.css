@@ -668,7 +668,7 @@ body {
 
 /*---------------------------*/
 /*--------Min Width----------------------*/
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .cources__content-img {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 50%;
@@ -893,7 +893,7 @@ body {
 }
 @media (max-width: 992px) {
   .cources__content-text--title {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -911,6 +911,12 @@ body {
     padding-top: 93px;
   }
 
+  .cources__content-text {
+    margin-bottom: 31px;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
   .cources__content-text--title {
     font-size: 36px;
   }
