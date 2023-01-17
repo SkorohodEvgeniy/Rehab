@@ -374,6 +374,11 @@ body {
 /*-----------------Cources-----------------------*/
 .cources{
   padding: 75px 0;
+.btn__blue{
+  display: block;
+  margin: 0 auto 75px;
+}
+
   &__heading{
     margin: 0 auto;
     margin-bottom: 35px;
@@ -394,19 +399,31 @@ body {
       color: #1E212C;
     }
   }
+  &__cards{
+    display: grid;
+    margin-bottom: 35px;
+    grid-row-gap: 35px;
+  }
   &__card{
     display: flex;
     background: #FFFFFF;
     box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     transition: all 0.3s ease 0s;
+    min-height: 225px;
+    &-img{
+      flex: 1 0 215px;
+      img{
+        border-radius: 4px 0 0 4px;
+      }
+    }
     &:hover{
       border: 1.5px solid #FFB800;
       box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
       border-radius: 15px;
-    }
-    &__img{
-      flex: 1 0 215px;
+      img{
+        border-radius: 15px;
+      }
     }
     &-content{
       display: flex;
@@ -444,7 +461,7 @@ body {
     }
 
   }
-&__teacher{
+  &__teacher{
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
@@ -452,7 +469,52 @@ body {
   span{
     font-weight: 700;
   }
-}
+  }
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    &-img{
+      flex: 1 0 100%;
+      text-align: center;
+      img{
+        object-fit: cover;
+      }
+    }
+    &-text{
+      flex: 1 0 100%;
+      &--title{
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1E212C;
+        margin-bottom: 34px;
+      }
+      &--lists{
+        li{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #424551;
+          position: relative;
+          padding-left: 32px;
+          &::before{
+            content: url(/img/svg/check.svg);
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+          }
+          &:not(:last-child){
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /*----Footer down (Липкий Footer)---------*/

@@ -1,9 +1,22 @@
 @media(min-width: 768px){
   .cources{
+    &__content{
+    &-img{
+        flex: 1 0 50%;
+      }
+    &-text{
+       flex: 1 0 50%;
+       padding-top: 50px;
+       padding-left: 91px;
+      }
+    }
+  }
+}
+@media(min-width: 1046px){
+  .cources{
     &__cards{
-      display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 30px;
+      grid-gap: 35px 30px;
     }
   }
 }
