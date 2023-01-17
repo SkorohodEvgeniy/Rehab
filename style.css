@@ -105,6 +105,30 @@ body {
   -webkit-box-shadow: 0px 15px 25px rgba(189, 16, 45, 0.3);
           box-shadow: 0px 15px 25px rgba(189, 16, 45, 0.3);
 }
+.btn__blue {
+  font-weight: 800;
+  width: 223px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 52px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: #0069B4;
+  -webkit-box-shadow: 0px 20px 25px rgba(0, 105, 180, 0.3);
+          box-shadow: 0px 20px 25px rgba(0, 105, 180, 0.3);
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+.btn__blue:hover {
+  background: #004C83;
+  -webkit-box-shadow: 0px 20px 25px rgba(0, 76, 131, 0.3);
+          box-shadow: 0px 20px 25px rgba(0, 76, 131, 0.3);
+  border-radius: 4px;
+}
 
 /*Menu Burger*/
 .header {
@@ -475,6 +499,85 @@ body {
   text-align: center;
   color: #1E212C;
 }
+.cources__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.cources__card:hover {
+  border: 1.5px solid #FFB800;
+  -webkit-box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+.cources__card__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 215px;
+          flex: 1 0 215px;
+}
+.cources__card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 23px 0 23px 22px;
+}
+.cources__card-category {
+  border-radius: 3px;
+  padding: 4px 10px 6px 10px;
+}
+.cources__card-category a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.cources__card-category.orange {
+  background-color: #F89828;
+}
+.cources__card-category.green {
+  background-color: #03CEA4;
+}
+.cources__card-category.blue {
+  background-color: #5A87FC;
+}
+.cources__card-category.red {
+  background-color: #F52F6E;
+}
+.cources__card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #0069B4;
+}
+.cources__card-description {
+  font-weight: 500;
+  line-height: 150%;
+  color: #5A5A5A;
+}
+.cources__teacher {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: #000000;
+}
+.cources__teacher span {
+  font-weight: 700;
+}
 
 /*----Footer down (Липкий Footer)---------*/
 .wrapper {
@@ -499,6 +602,13 @@ body {
 }
 
 /*---------------------------*/
+@media (min-width: 768px) {
+  .cources__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
 @media (max-width: 1045px) {
   body.lock {
     overflow: hidden;

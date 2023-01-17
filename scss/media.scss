@@ -1,4 +1,12 @@
-
+@media(min-width: 768px){
+  .cources{
+    &__cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+    }
+  }
+}
 @media (max-width: 1045px) {
     body.lock {
       overflow: hidden;
