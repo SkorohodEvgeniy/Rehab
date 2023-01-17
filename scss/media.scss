@@ -93,6 +93,9 @@
       &__btn{
         display: flex;
         order: 4;
+        &-menu.open{
+          left: 0;
+        }
       }
       &__phone{
         order: 5;
@@ -144,6 +147,7 @@
       &__text{
         text-align: start;
       }
+      
     }
     .first{
       &__title{
@@ -159,10 +163,14 @@
   .header{
     &__phone{
       margin-left: 0;
+      padding: 0;
 
       &-title{
-        font-size: 9px;
+        font-size: 13px;
       }
+    }
+    &__burger{
+      margin-left: auto;
     }
   }
  }
@@ -179,6 +187,18 @@
           font-size: 16px;
           flex: 1 0 68%;
         }
+      }
+      &__btn{
+        &-link{
+          font-size: 14px;
+          min-width: 140px;
+            svg{
+              right: 8px;
+            }
+        }
+      }
+      &__phone{
+        margin-left: auto;
       }
     }
 }
