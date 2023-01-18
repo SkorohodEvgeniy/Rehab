@@ -1,4 +1,28 @@
 /*--------Min Width----------------------*/
+@media (min-width: 560px) {
+  .cources::before {
+    content: url(/img/png/dots.png);
+    display: block;
+    width: 155px;
+    height: 113px;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    z-index: -1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .cources::after {
+    content: url(/img/png/circles.png);
+    display: block;
+    width: 155px;
+    height: 113px;
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    z-index: -1;
+  }
+}
 @media (min-width: 769px) {
   .cources__content-img {
     -webkit-box-flex: 1;

@@ -104,7 +104,27 @@ body {
       border-radius: 4px;
     }
   }
+  
 }
+.section__title{
+    h2{
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 130%;
+      text-align: center;
+      color: #1E212C;
+      margin-bottom: 29px;
+    }
+    p{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 37px;
+    }
+  }
+
 
 
 
@@ -484,6 +504,20 @@ body {
 /*-----------------Cources-----------------------*/
 .cources {
   padding: 75px 0;
+  position: relative;
+
+  &::before{
+    content: url(/img/png/dots.png);
+    display: block;
+    width: 155px;
+    height: 113px;
+    position: absolute;
+    right: 0;
+    bottom: 11%;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+  
 
   .btn__blue {
     display: block;
@@ -659,6 +693,38 @@ body {
     }
   }
 
+}
+
+
+/*-------------Email-----------------*/
+.email{
+  background: #0069b438;
+  padding: 145px 0 138px;
+  position: relative;
+  &::before{
+    content: url(/img/png/group-forms.png);
+    display: block;
+    left: 0;
+    top: 70px;
+    position: absolute;
+  }
+  &__form{
+    padding: 18px 24px;
+    background-color: #fff;
+    max-width: 1004px;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 11px;
+
+    &-links{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      text-align: center;
+      color: #6C6C6C;
+      text-align: center;
+    }
+  }
 }
 
 /*----Footer down (Липкий Footer)---------*/
