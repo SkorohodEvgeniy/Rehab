@@ -263,6 +263,23 @@
   .first__text {
     font-size: 17px;
   }
+
+  .cources__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cources__card-img {
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .cources__card-img img {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 @media (max-width: 375px) {
   .header__phone {

@@ -333,6 +333,19 @@
       font-size: 17px;
     }
   }
+  .cources{
+    &__card{
+      flex-direction: column;
+      &-img{
+        text-align: center;
+        flex: 0 1 100%;
+        img{
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+    }
+  }
 }
 
 @media(max-width:375px) {
