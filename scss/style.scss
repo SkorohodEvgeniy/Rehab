@@ -1032,6 +1032,21 @@ input {
 
 /*-------------Footer----------------------------*/
 .footer{
+  &__logo{
+    display: flex;
+  }
+  &__middle{
+    background-color: #0069b438;
+    &-column{
+      display: flex;
+      justify-content: space-between;
+      &--1{}
+      &--2{}
+      &--3{}
+      &--4{}
+    }
+  }
+
   &__down{
     background-color: #0069B4;
     display: flex;

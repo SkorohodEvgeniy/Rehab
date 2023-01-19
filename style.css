@@ -924,6 +924,22 @@ input[type="submit"] {
 }
 
 /*-------------Footer----------------------------*/
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__middle {
+  background-color: #0069b438;
+}
+.footer__middle-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .footer__down {
   background-color: #0069B4;
   display: -webkit-box;
