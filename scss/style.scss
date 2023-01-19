@@ -938,6 +938,7 @@ input {
     justify-content: space-between;
     z-index: 2;
     position: relative;
+    overflow: hidden;
   }
 
   &__text {
