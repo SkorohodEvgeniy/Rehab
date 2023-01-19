@@ -1007,7 +1007,7 @@ input {
     }
   }
 }
-/*----Footer down (Липкий Footer)---------*/
+/*----Footer(Липкий Footer)---------*/
 
 .wrapper {
   min-height: 100%;
@@ -1030,6 +1030,20 @@ input {
   /*Magic*/
 }
 
+/*-------------Footer----------------------------*/
+.footer{
+  &__down{
+    background-color: #0069B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 54px;
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: 40;
+    color: #eaeaea;
+  }
+}
 
 
 /*---------------------------*/

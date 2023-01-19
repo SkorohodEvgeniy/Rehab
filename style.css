@@ -901,7 +901,7 @@ input[type="submit"] {
   color: #2C2C2C;
 }
 
-/*----Footer down (Липкий Footer)---------*/
+/*----Footer(Липкий Footer)---------*/
 .wrapper {
   min-height: 100%;
   /*Magic*/
@@ -921,6 +921,25 @@ input[type="submit"] {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   /*Magic*/
+}
+
+/*-------------Footer----------------------------*/
+.footer__down {
+  background-color: #0069B4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 54px;
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: 40;
+  color: #eaeaea;
 }
 
 /*---------------------------*/
