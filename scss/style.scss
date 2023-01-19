@@ -133,7 +133,7 @@ body {
 
 input {
   background: #c7c7c715;
-  border: 1px solid #000000;
+  border: 1px solid #1px solid #00000021;
   border-radius: 4px;
   height: 50px;
   width: 100%;
@@ -917,7 +917,7 @@ input {
 /*-----------How------------------*/
 .how {
   background-color: #F4F5F7;
-  
+
   &__container {
     position: relative;
     overflow: hidden;
@@ -984,14 +984,20 @@ input {
 }
 
 /*------------Online------------------------*/
-.online{
+.online {
   background-color: #ffb70018;
   padding: 90px 0;
-  &__body{
+
+  &__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  &__text{
+
+  &__text {
     h2 {
       font-weight: 900;
       font-size: 40px;
@@ -999,7 +1005,8 @@ input {
       color: #000000;
       margin-bottom: 23px;
     }
-    p{
+
+    p {
       font-weight: 500;
       font-size: 18px;
       line-height: 120%;
@@ -1007,6 +1014,7 @@ input {
     }
   }
 }
+
 /*----Footer(Липкий Footer)---------*/
 
 .wrapper {
@@ -1031,36 +1039,55 @@ input {
 }
 
 /*-------------Footer----------------------------*/
-.footer{
-  &__logo{
+.footer {
+  &__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-  &__middle{
+
+  &__middle {
     background-color: #0069b438;
-    &-column{
+
+    &-column {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      &--1{}
-      &--2{}
-      &--3{}
-      &--4{
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+
+      &--1 {}
+
+      &--2 {}
+
+      &--3 {}
+
+      &--4 {
         background-color: #0069B4;
       }
     }
   }
 
-  &__down{
+  &__down {
     background-color: #0069B4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 54px;
     font-size: 13px;
     line-height: 150%;
     font-weight: 40;
     color: #eaeaea;
   }
-  .box__blue{
+
+  .box__blue {
     width: 100%;
     background-color: #0069B4;
   }
