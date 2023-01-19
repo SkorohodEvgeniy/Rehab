@@ -1224,6 +1224,24 @@ input[type="submit"] {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
+  .online {
+    padding: 37px 0 57px;
+  }
+  .online__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .online__text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .online__text p {
+    font-size: 17px;
+    margin-bottom: 34px;
+  }
 }
 @media (max-width: 560px) {
   .header__text {
@@ -1320,6 +1338,10 @@ input[type="submit"] {
   }
   .header__burger {
     margin-left: auto;
+  }
+
+  .online__text h2 {
+    font-size: 31px;
   }
 }
 @media (max-width: 345px) {
