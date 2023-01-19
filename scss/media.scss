@@ -48,7 +48,23 @@
       }
     }
   }
+
+  .how {
+
+    &__container {
+      &::before {
+        position: absolute;
+        content: url(/img/png/how.png);
+        left: 30px;
+        top: -78px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+  }
 }
+
 
 @media(min-width: 1046px) {
   .cources {

@@ -919,6 +919,11 @@ input {
   padding: 103px 0 131px;
   background-color: #F4F5F7;
 
+  &__container {
+    position: relative;
+
+  }
+
   &__box {
     background-color: #0069B4;
     border-radius: 10px;
@@ -929,9 +934,10 @@ input {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
   }
 
   &__text {
