@@ -1036,10 +1036,15 @@ input {
     display: flex;
   }
   &__middle{
-    background-color: #0069b438;
     &-column{
       display: flex;
       justify-content: space-between;
+      &--lightblue{
+        background-color: #0069b438;
+      }
+      &--blue{
+        background-color: #0069B4;
+      }
       &--1{}
       &--2{}
       &--3{}

@@ -929,9 +929,6 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
 }
-.footer__middle {
-  background-color: #0069b438;
-}
 .footer__middle-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -939,6 +936,12 @@ input[type="submit"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.footer__middle-column--lightblue {
+  background-color: #0069b438;
+}
+.footer__middle-column--blue {
+  background-color: #0069B4;
 }
 .footer__down {
   background-color: #0069B4;
