@@ -133,7 +133,7 @@ body {
 
 input {
   background: #c7c7c715;
-  border: 1px solid #1px solid #00000021;
+  border: 1px solid #00000021;
   border-radius: 4px;
   height: 50px;
   width: 100%;
@@ -993,8 +993,8 @@ input {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   &__text {
@@ -1054,8 +1054,8 @@ input {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
 
       &--1 {}
 
@@ -1075,11 +1075,11 @@ input {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     min-height: 54px;
     font-size: 13px;
     line-height: 150%;

@@ -149,7 +149,7 @@ body {
 
 input {
   background: #c7c7c715;
-  border: 1px solid #000000;
+  border: 1px solid #00000021;
   border-radius: 4px;
   height: 50px;
   width: 100%;
@@ -884,8 +884,8 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .online__text h2 {
   font-weight: 900;
@@ -937,8 +937,8 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .footer__middle-column--4 {
   background-color: #0069B4;
@@ -949,11 +949,11 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 54px;
   font-size: 13px;
   line-height: 150%;
