@@ -40,7 +40,7 @@
   .how__container::before {
     position: absolute;
     content: url(/img/png/how.png);
-    left: 0;
+    left: 30px;
     top: 26px;
     width: 100%;
     -o-object-fit: cover;
