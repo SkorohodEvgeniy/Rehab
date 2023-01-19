@@ -983,7 +983,30 @@ input {
   }
 }
 
-
+/*------------Online------------------------*/
+.online{
+  background-color: #ffb70018;
+  padding: 90px 0;
+  &__body{
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    h2 {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 130%;
+      color: #000000;
+      margin-bottom: 23px;
+    }
+    p{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+      color: #2C2C2C;
+    }
+  }
+}
 /*----Footer down (Липкий Footer)---------*/
 
 .wrapper {

@@ -874,6 +874,33 @@ input[type="submit"] {
   color: #FFFFFF;
 }
 
+/*------------Online------------------------*/
+.online {
+  background-color: #ffb70018;
+  padding: 90px 0;
+}
+.online__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.online__text h2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.online__text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #2C2C2C;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 .wrapper {
   min-height: 100%;
