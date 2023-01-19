@@ -751,6 +751,54 @@ input[type="submit"] {
   color: #626262;
 }
 
+/*---------Whoare-------------------*/
+.whoare {
+  padding: 85px 0;
+}
+.whoare ul li {
+  padding-left: 0;
+}
+.whoare ul li:before {
+  content: none;
+}
+.whoare img {
+  border: 1px solid #E5E8ED;
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 10px;
+}
+.whoare .cources__content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.whoare .cources__content-text {
+  padding: 0;
+  max-width: 509px;
+}
+.whoare .cources__content-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  font-style: normal;
+  position: relative;
+  padding-left: 6px;
+}
+.whoare .cources__content-text p::before {
+  content: '';
+  width: 45px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  z-index: -1;
+  background-color: #FFE15D;
+}
+.whoare .cources__content-text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 .wrapper {
   min-height: 100%;

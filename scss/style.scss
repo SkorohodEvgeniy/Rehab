@@ -94,7 +94,7 @@ body {
     text-transform: uppercase;
     background: #0069B4;
     -webkit-box-shadow: 0px 20px 25px rgba(0, 105, 180, 0.3);
-            box-shadow: 0px 20px 25px rgba(0, 105, 180, 0.3);
+    box-shadow: 0px 20px 25px rgba(0, 105, 180, 0.3);
     border-radius: 4px;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -104,7 +104,7 @@ body {
     &:hover {
       background: #004C83;
       -webkit-box-shadow: 0px 20px 25px rgba(0, 76, 131, 0.3);
-              box-shadow: 0px 20px 25px rgba(0, 76, 131, 0.3);
+      box-shadow: 0px 20px 25px rgba(0, 76, 131, 0.3);
       border-radius: 4px;
     }
   }
@@ -378,11 +378,11 @@ input {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
     height: 85px;
 
@@ -393,11 +393,11 @@ input {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
 
       li {
         position: relative;
@@ -411,11 +411,11 @@ input {
           bottom: -94px;
           left: 0;
           -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
           -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
           background-color: #fafafa;
 
           a {
@@ -562,8 +562,8 @@ input {
     bottom: 11%;
     z-index: -1;
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 
 
@@ -607,7 +607,7 @@ input {
     display: flex;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -616,8 +616,8 @@ input {
 
     &-img {
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 215px;
-              flex: 1 0 215px;
+      -ms-flex: 1 0 215px;
+      flex: 1 0 215px;
 
       img {
         border-radius: 4px 0 0 4px;
@@ -627,7 +627,7 @@ input {
     &:hover {
       border: 1.5px solid #FFB800;
       -webkit-box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
-              box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
       border-radius: 15px;
 
       img {
@@ -641,13 +641,13 @@ input {
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
+      justify-content: space-around;
       -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
       padding: 23px 0 23px 22px;
     }
 
@@ -711,24 +711,24 @@ input {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
     &-img {
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 100%;
-              flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+      flex: 1 0 100%;
       text-align: center;
 
       img {
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
       }
     }
 
     &-text {
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 100%;
-              flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+      flex: 1 0 100%;
 
       &--title {
         font-weight: 900;
@@ -820,8 +820,8 @@ input {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       gap: 22px;
       margin-bottom: 5px;
     }
@@ -832,6 +832,67 @@ input {
       line-height: 16px;
       color: #626262;
 
+    }
+  }
+}
+
+/*---------Whoare-------------------*/
+.whoare {
+  padding: 85px 0;
+
+  ul {
+    li {
+      padding-left: 0;
+
+      &:before {
+        content: none;
+
+      }
+    }
+  }
+
+  img {
+    border: 1px solid #E5E8ED;
+
+    -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 10px;
+  }
+
+  .cources__content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    &-text {
+      padding: 0;
+      max-width: 509px;
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #424551;
+        font-style: normal;
+        position: relative;
+        padding-left: 6px;
+
+        &::before {
+          content: '';
+          width: 45px;
+          height: 8px;
+          position: absolute;
+          left: 0;
+          top: 15px;
+          z-index: -1;
+          background-color: #FFE15D;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
     }
   }
 }
