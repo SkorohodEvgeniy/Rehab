@@ -1036,19 +1036,16 @@ input {
     display: flex;
   }
   &__middle{
+    background-color: #0069b438;
     &-column{
       display: flex;
       justify-content: space-between;
-      &--lightblue{
-        background-color: #0069b438;
-      }
-      &--blue{
-        background-color: #0069B4;
-      }
       &--1{}
       &--2{}
       &--3{}
-      &--4{}
+      &--4{
+        background-color: #0069B4;
+      }
     }
   }
 
@@ -1062,6 +1059,10 @@ input {
     line-height: 150%;
     font-weight: 40;
     color: #eaeaea;
+  }
+  .box__blue{
+    width: 100%;
+    background-color: #0069B4;
   }
 }
 

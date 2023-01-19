@@ -929,6 +929,9 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
 }
+.footer__middle {
+  background-color: #0069b438;
+}
 .footer__middle-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -937,10 +940,7 @@ input[type="submit"] {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.footer__middle-column--lightblue {
-  background-color: #0069b438;
-}
-.footer__middle-column--blue {
+.footer__middle-column--4 {
   background-color: #0069B4;
 }
 .footer__down {
@@ -959,6 +959,10 @@ input[type="submit"] {
   line-height: 150%;
   font-weight: 40;
   color: #eaeaea;
+}
+.footer .box__blue {
+  width: 100%;
+  background-color: #0069B4;
 }
 
 /*---------------------------*/
