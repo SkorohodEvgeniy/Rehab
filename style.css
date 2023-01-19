@@ -817,11 +817,12 @@ input[type="submit"] {
 
 /*-----------How------------------*/
 .how {
-  padding: 103px 0 131px;
   background-color: #F4F5F7;
 }
 .how__container {
   position: relative;
+  overflow: hidden;
+  padding: 103px 0 131px;
 }
 .how__box {
   background-color: #0069B4;
@@ -938,8 +939,8 @@ input[type="submit"] {
   .how__container::before {
     position: absolute;
     content: url(/img/png/how.png);
-    left: 30px;
-    top: -78px;
+    left: 0;
+    top: 26px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;

@@ -916,12 +916,12 @@ input {
 
 /*-----------How------------------*/
 .how {
-  padding: 103px 0 131px;
   background-color: #F4F5F7;
-
+  
   &__container {
     position: relative;
-
+    overflow: hidden;
+    padding: 103px 0 131px;
   }
 
   &__box {
