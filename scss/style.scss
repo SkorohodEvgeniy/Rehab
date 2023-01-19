@@ -125,7 +125,25 @@ body {
     }
   }
 
-
+input{
+  background: #c7c7c715;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px 20px;
+  color: #4E4E4E50;
+  font-weight: 400;
+  line-height: calc(18 / 15 * 100%);
+  &:focus{
+    color: #4e4e4e;
+  }
+  &[type="submit"]{
+    border: none;
+    text-transform: uppercase;
+  }
+}
 
 
 /*Menu Burger*/
@@ -707,6 +725,12 @@ body {
     left: 0;
     top: 70px;
     position: absolute;
+    z-index: -1;
+  }
+  &__heading{
+    h2{
+      font-size: 46px;
+    }
   }
   &__form{
     padding: 18px 24px;
@@ -723,6 +747,19 @@ body {
       text-align: center;
       color: #6C6C6C;
       text-align: center;
+      a{
+        text-decoration: underline;
+        color: #6C6C6C;
+        &:hover{
+          color: #000;
+        }
+      }
+    }
+    &-inputs{
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      margin-bottom: 5px;
     }
   }
 }

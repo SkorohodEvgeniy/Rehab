@@ -339,6 +339,20 @@
       }
     }
   }
+
+  .email{
+    padding: 90px 0;
+    &__heading{
+      h2{
+        font-size: 37px;
+      }
+    }
+    &__form{
+      &-inputs{
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 @media(max-width:560px) {
@@ -370,6 +384,26 @@
         }
       }
     }
+  }
+  .email{
+    padding: 58px 0;
+    &::before{
+      content: url(/img/png/group-forms-m.png);
+      right: 0;
+      top: 20px;
+      left: unset;
+    }
+    &__heading{
+      h2{
+        font-size: 26px;
+        text-align: start;
+      }
+      p{
+        font-size: 18px;
+        text-align: start;
+      }
+    }
+    
   }
 }
 

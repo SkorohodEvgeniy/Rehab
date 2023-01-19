@@ -147,6 +147,26 @@ body {
   margin-bottom: 37px;
 }
 
+input {
+  background: #c7c7c715;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px 20px;
+  color: #4E4E4E50;
+  font-weight: 400;
+  line-height: calc(18 / 15 * 100%);
+}
+input:focus {
+  color: #4e4e4e;
+}
+input[type="submit"] {
+  border: none;
+  text-transform: uppercase;
+}
+
 /*Menu Burger*/
 .header {
   position: fixed;
@@ -686,6 +706,10 @@ body {
   left: 0;
   top: 70px;
   position: absolute;
+  z-index: -1;
+}
+.email__heading h2 {
+  font-size: 46px;
 }
 .email__form {
   padding: 18px 24px;
@@ -702,6 +726,23 @@ body {
   text-align: center;
   color: #6C6C6C;
   text-align: center;
+}
+.email__form-links a {
+  text-decoration: underline;
+  color: #6C6C6C;
+}
+.email__form-links a:hover {
+  color: #000;
+}
+.email__form-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 5px;
 }
 
 /*----Footer down (Липкий Footer)---------*/
@@ -1004,6 +1045,19 @@ body {
   .cources__content-text--title {
     font-size: 36px;
   }
+
+  .email {
+    padding: 90px 0;
+  }
+  .email__heading h2 {
+    font-size: 37px;
+  }
+  .email__form-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media (max-width: 560px) {
   .header__text {
@@ -1032,6 +1086,24 @@ body {
   .cources__card-img img {
     width: 100%;
     border-radius: 0;
+  }
+
+  .email {
+    padding: 58px 0;
+  }
+  .email::before {
+    content: url(/img/png/group-forms-m.png);
+    right: 0;
+    top: 20px;
+    left: unset;
+  }
+  .email__heading h2 {
+    font-size: 26px;
+    text-align: start;
+  }
+  .email__heading p {
+    font-size: 18px;
+    text-align: start;
   }
 }
 @media (max-width: 375px) {
