@@ -167,6 +167,22 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
+/*-----------Yellow-line-------------------*/
+.yellow-line {
+  position: relative;
+  z-index: 2;
+}
+.yellow-line::before {
+  content: '';
+  width: 100%;
+  height: 8px;
+  background-color: #FFE15D;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /*Menu Burger*/
 .header {
   position: fixed;
