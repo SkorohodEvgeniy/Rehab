@@ -799,6 +799,12 @@ input[type="submit"] {
   margin-bottom: 15px;
 }
 
+/*-----------How------------------*/
+.how {
+  padding: 103px 0 131px;
+  background-color: #F4F5F7;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 .wrapper {
   min-height: 100%;
