@@ -1097,6 +1097,7 @@ input[type="submit"] {
   line-height: 150%;
   font-weight: 40;
   color: #eaeaea;
+  margin-top: -1px;
 }
 .footer .box__blue {
   width: 100%;
