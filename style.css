@@ -1371,6 +1371,17 @@ input[type="submit"] {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+
+  .footer__middle-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .footer__middle-column--4 {
+    padding: 50px 20px;
+  }
 }
 @media (max-width: 992px) {
   .cources__content-text--title {
@@ -1421,8 +1432,8 @@ input[type="submit"] {
   .online__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .online__text h2 {
     font-size: 36px;
