@@ -1055,6 +1055,10 @@ input {
 
   &__middle {
     background-color: #0069b438;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
 
     ._container {
       padding-right: 0;
@@ -1276,8 +1280,13 @@ input {
   }
 
   .box__blue {
-    width: 100%;
+    width: 26%;
     background-color: #0069B4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
   }
 }
 
