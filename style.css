@@ -932,11 +932,14 @@ input[type="submit"] {
 }
 .footer__logo .header__text {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 55%;
-          flex: 0 1 55%;
+      -ms-flex: none;
+          flex: none;
 }
 .footer__middle {
   background-color: #0069b438;
+}
+.footer__middle ._container {
+  padding-right: 0;
 }
 .footer__middle-columns, .footer__middle-column {
   display: -webkit-box;
@@ -945,6 +948,7 @@ input[type="submit"] {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
 }
 .footer__middle-columns--1 .footer__contact, .footer__middle-column--1 .footer__contact {
   margin-bottom: 20px;
@@ -1006,6 +1010,63 @@ input[type="submit"] {
 }
 .footer__middle-columns--4, .footer__middle-column--4 {
   background-color: #0069B4;
+  padding: 38px 0 58px 60px;
+}
+.footer__middle-columns--4 .footer__form-title, .footer__middle-column--4 .footer__form-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.footer__middle-columns--4 .footer__form-fields input, .footer__middle-column--4 .footer__form-fields input {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.footer__middle-columns--4 .footer__form-fields input::-webkit-input-placeholder, .footer__middle-column--4 .footer__form-fields input::-webkit-input-placeholder {
+  color: #fff;
+}
+.footer__middle-columns--4 .footer__form-fields input:-ms-input-placeholder, .footer__middle-column--4 .footer__form-fields input:-ms-input-placeholder {
+  color: #fff;
+}
+.footer__middle-columns--4 .footer__form-fields input::-ms-input-placeholder, .footer__middle-column--4 .footer__form-fields input::-ms-input-placeholder {
+  color: #fff;
+}
+.footer__middle-columns--4 .footer__form-fields input::placeholder, .footer__middle-column--4 .footer__form-fields input::placeholder {
+  color: #fff;
+}
+.footer__middle-columns--4 .footer__form-fields input:not(:last-child), .footer__middle-column--4 .footer__form-fields input:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__middle-columns--4 .email__form-text, .footer__middle-column--4 .email__form-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.footer__middle-columns--4 .form__btn, .footer__middle-column--4 .form__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0069B4;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 192px;
+  height: 50px;
+}
+.footer__middle-column {
+  padding: 71px 120px 87px 0;
 }
 .footer__down {
   background-color: #0069B4;
