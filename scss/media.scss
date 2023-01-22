@@ -473,6 +473,23 @@
       }
     }
   }
+
+  .footer{
+    &__middle{
+      &-columns{
+        flex-direction: column;
+      }
+      ._container{
+        padding: 0;
+      }
+    }
+    &__social{
+      margin-bottom: 15px;
+    }
+  }
+  .box__blue{
+    display: none;
+  }
 }
 
 @media(max-width:560px) {
@@ -588,7 +605,14 @@
       }
     }
   }
-
+  .footer{
+    &__middle{
+      &-column{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
 }
 
 @media(max-width:375px) {
