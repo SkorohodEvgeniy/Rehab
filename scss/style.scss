@@ -1015,6 +1015,49 @@ input {
   }
 }
 
+
+/*------------Carousel---------------------*/
+.carousel{
+  &__heading{}
+  &__box{
+    &-lists{}
+    &-list{
+      padding: 64px 105px;
+    }
+    &-body{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #424551;
+        &--content{
+          margin-bottom: 24px;
+        }
+    }
+    &-text{
+      display: flex;
+      align-items: center;
+    }
+    &-img{
+      border-radius: 50%;
+      margin-right: 17px;
+    }
+    &-name{
+      .name{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        color: #000000;
+      }
+      .work{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #707070;
+      }
+    }
+  }
+}
+
 /*----Footer(Липкий Footer)---------*/
 
 .wrapper {

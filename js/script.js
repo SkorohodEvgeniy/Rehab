@@ -30,3 +30,15 @@ $(document).ready(function () {
     $(this).toggleClass("active").next().slideToggle(300);
   });
 });
+
+/**------------Slider reviews------------------------- */
+
+$(document).ready(function(){
+  $('.carousel__box-lists').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});

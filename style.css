@@ -901,6 +901,44 @@ input[type="submit"] {
   color: #2C2C2C;
 }
 
+/*------------Carousel---------------------*/
+.carousel__box-list {
+  padding: 64px 105px;
+}
+.carousel__box-body {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424551;
+}
+.carousel__box-body--content {
+  margin-bottom: 24px;
+}
+.carousel__box-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.carousel__box-img {
+  border-radius: 50%;
+  margin-right: 17px;
+}
+.carousel__box-name .name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+.carousel__box-name .work {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: #707070;
+}
+
 /*----Footer(Липкий Footer)---------*/
 .wrapper {
   min-height: 100%;
