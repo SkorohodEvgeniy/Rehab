@@ -1163,7 +1163,7 @@ input {
 
       &--4 {
         background-color: #0069B4;
-        padding: 38px 0 58px 60px;
+        padding: 38px 15px  58px 60px;
 
         .footer__form-title {
           font-weight: 700;
@@ -1252,6 +1252,12 @@ input {
             }
           }
         }
+      }
+
+      &--23{
+        display: flex;
+        flex: 0 1 47%;
+        justify-content: space-between;
       }
     }
 
