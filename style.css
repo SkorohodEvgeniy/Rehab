@@ -99,6 +99,7 @@ body {
   font-size: 16px;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  cursor: pointer;
 }
 .btn__red:hover {
   background: #BD102D;
@@ -122,6 +123,7 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #fff;
+  cursor: pointer;
 }
 .btn__blue:hover {
   background: #004C83;
@@ -235,6 +237,9 @@ input[type="submit"] {
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1px 0px 0px 1920px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 0px 0px 1920px rgba(0, 0, 0, 0.4);
+  display: none;
 }
 .pop-up .thanks__body {
   display: -webkit-box;
@@ -273,6 +278,9 @@ input[type="submit"] {
   text-align: center;
   color: #333333;
   margin-bottom: 34px;
+}
+.pop-up .thanks.show {
+  display: block;
 }
 
 /*-----------Yellow-line-------------------*/

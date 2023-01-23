@@ -74,6 +74,7 @@ body {
     -webkit-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
+    cursor: pointer;
 
     &:hover {
       background: #BD102D;
@@ -100,6 +101,7 @@ body {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     color: #fff;
+    cursor: pointer;
 
     &:hover {
       background: #004C83;
@@ -244,6 +246,8 @@ input {
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
+    box-shadow: 1px 0px 0px 1920px rgba(0,0,0,0.4);
+    display: none;
 
     &__body{
       display: flex;
@@ -270,7 +274,9 @@ input {
         }
       }
     }
-    
+    &.show{
+      display: block;
+    }
   }
 }
 
