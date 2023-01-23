@@ -1098,7 +1098,6 @@ input {
 /*------------Carousel---------------------*/
 .carousel {
   padding: 85px 0;
-  margin: 85px 0;
 
   &__heading {}
 
@@ -1108,8 +1107,8 @@ input {
     &-lists {}
 
     &-list {
-      margin: 64px 105px;
-      padding: 64px 105px;
+      margin: 32px 105px 64px;
+      padding: 32px 105px 64px;
       background: #FFFFFF;
       -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
       box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
@@ -1441,7 +1440,7 @@ input {
   }
 
   .box__blue {
-    width: 26%;
+    width: 30%;
     background-color: #0069B4;
     position: absolute;
     top: 0;
