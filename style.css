@@ -167,6 +167,19 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+
 /*-----------Yellow-line-------------------*/
 .yellow-line {
   position: relative;

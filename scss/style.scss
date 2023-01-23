@@ -154,6 +154,26 @@ input {
 
 }
 
+.slick {
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+  }
+
+  &-prev {
+    left: 0;
+  }
+
+  &-next {
+    right: 0;
+  }
+
+}
+
 /*-----------Yellow-line-------------------*/
 .yellow-line {
   position: relative;
