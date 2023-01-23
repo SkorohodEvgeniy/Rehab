@@ -224,6 +224,54 @@ input[type="submit"] {
   background-color: #424551;
 }
 
+/*------------Pop UP--------------------*/
+.pop-up .thanks {
+  max-width: 874px;
+}
+.pop-up .thanks__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pop-up .thanks__body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+.pop-up .thanks__body-content--title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.pop-up .thanks__body-content--text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 34px;
+}
+.pop-up .thanks__body-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
 /*-----------Yellow-line-------------------*/
 .yellow-line {
   position: relative;
