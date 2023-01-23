@@ -237,6 +237,13 @@ input {
 .pop-up{
   .thanks{
     max-width: 874px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     &__body{
       display: flex;
       &-content{
@@ -244,7 +251,7 @@ input {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        flex: 0 1 50%;
+        flex: 1 0 50%;
         &--title{
           font-weight: 700;
           font-size: 36px;
@@ -260,9 +267,6 @@ input {
           color: #333333;
           margin-bottom: 34px;
         }
-      }
-      &-img{
-        flex: 0 1 50%;
       }
     }
   }
