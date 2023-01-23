@@ -35,8 +35,9 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".carousel__box-lists").slick({
     dots: true,
+    autoplay: true,
     infinite: true,
-    speed: 300,
+    speed: 800,
     slidesToShow: 1,
     adaptiveHeight: true,
     appendArrows: $(".arrow__btns"),
