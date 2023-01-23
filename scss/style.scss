@@ -196,6 +196,41 @@ input {
     right: 0;
   }
 
+  &-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    li {
+      button {
+        width: 30px;
+        height: 3px;
+        background-color: #B3B7BC;
+        border-radius: 3px;
+        font-size: 0;
+      }
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #424551;
+
+        }
+      }
+    }
+  }
 }
 
 /*-----------Yellow-line-------------------*/
@@ -1062,6 +1097,9 @@ input {
 
 /*------------Carousel---------------------*/
 .carousel {
+  padding: 85px 0;
+  margin: 85px 0;
+
   &__heading {}
 
   &__box {
