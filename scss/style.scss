@@ -1017,38 +1017,55 @@ input {
 
 
 /*------------Carousel---------------------*/
-.carousel{
-  &__heading{}
-  &__box{
-    &-lists{}
-    &-list{
+.carousel {
+  &__heading {}
+
+  &__box {
+    &-lists {}
+
+    &-list {
       padding: 64px 105px;
     }
-    &-body{
+
+    &-body {
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
       color: #424551;
-        &--content{
-          margin-bottom: 24px;
-        }
+
+      &--content {
+        margin-bottom: 24px;
+      }
     }
-    &-text{
+
+    &-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
-    &-img{
-      border-radius: 50%;
+
+    &-picture {
+      max-width: 72px;
+      max-height: 72px;
       margin-right: 17px;
     }
-    &-name{
-      .name{
+
+    &-img {
+      border-radius: 50%;
+    }
+
+    &-name {
+      .name {
         font-weight: 700;
         font-size: 16px;
         line-height: 160%;
         color: #000000;
       }
-      .work{
+
+      .work {
         font-weight: 400;
         font-size: 15px;
         line-height: 150%;
@@ -1206,7 +1223,7 @@ input {
 
       &--4 {
         background-color: #0069B4;
-        padding: 38px 15px  58px 60px;
+        padding: 38px 15px 58px 60px;
 
         .footer__form-title {
           font-weight: 700;
@@ -1297,9 +1314,15 @@ input {
         }
       }
 
-      &--23{
+      &--23 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 47%;
         flex: 0 1 47%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
       }
     }
