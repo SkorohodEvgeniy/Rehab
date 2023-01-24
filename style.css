@@ -367,6 +367,29 @@ input[type="submit"] {
   z-index: -1;
 }
 
+/*--------Breadcrumbs-----------------------*/
+.breadcrumbs {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.breadcrumbs__body ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumbs__body ul li {
+  position: relative;
+}
+.breadcrumbs__body ul li a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A3A3A3;
+}
+.breadcrumbs__body ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
 /*Menu Burger*/
 .header {
   position: fixed;
