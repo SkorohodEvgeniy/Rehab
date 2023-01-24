@@ -236,36 +236,55 @@ input {
 }
 
 /*------------Pop UP--------------------*/
-.pop-up{
-  .thanks{
+.pop-up {
+  .thanks {
     max-width: 874px;
     max-height: 421px;
     background-color: #fff;
     position: fixed;
     z-index: 100;
-    top: 50%;
+    top: 35%;
     left: 50%;
     width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    box-shadow: 1px 0px 0px 1920px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 0px 0px 1920px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 0px 0px 1920px rgba(0, 0, 0, 0.4);
     display: none;
 
-    &__body{
+    &__body {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      &-content{
+
+      &-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
         flex: 1 0 50%;
-        &--title{
+
+        &--title {
           font-weight: 700;
           font-size: 36px;
           line-height: 43px;
           color: #000000;
           margin-bottom: 20px;
         }
-        &--text{
+
+        &--text {
           font-weight: 500;
           font-size: 18px;
           line-height: 22px;
@@ -275,7 +294,8 @@ input {
         }
       }
     }
-    &.show{
+
+    &.show {
       display: block;
     }
   }
