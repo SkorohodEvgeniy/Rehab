@@ -227,6 +227,59 @@ input[type="submit"] {
 }
 
 /*------------Pop UP--------------------*/
+.pop-up .application {
+  max-width: 874px;
+  height: 421px;
+  width: 100%;
+  -webkit-box-shadow: 1px 0px 0px 1920px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 0px 0px 1920px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.pop-up .application__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.pop-up .application__body-content {
+  padding: 35px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+.pop-up .application__body-content--title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+.pop-up .application__body .email__form {
+  padding: 0;
+}
+.pop-up .application__body .email__form-inputs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.pop-up .application__body .email__form-text {
+  margin-bottom: 11px;
+}
+.pop-up .application__body .email__form-links {
+  text-align: start;
+  margin-bottom: 32px;
+}
 .pop-up .thanks {
   max-width: 874px;
   max-height: 421px;
