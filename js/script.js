@@ -11,14 +11,13 @@ headerBurger.addEventListener("click", toggleBurgerMenu);
 
 /** Btn menu */
 
-let clickBtn = document.querySelector('.header__btn-link');
+let clickBtn = document.querySelector(".header__btn-link");
 
-clickBtn.addEventListener('click', function(){
-
-  let headerMenu = document.querySelector('.header__btn-menu').classList.toggle('open');
-
+clickBtn.addEventListener("click", function () {
+  let headerMenu = document
+    .querySelector(".header__btn-menu")
+    .classList.toggle("open");
 });
-
 
 /* Accordion*/
 $(document).ready(function () {
@@ -57,3 +56,14 @@ $(document).ready(function () {
     ],
   });
 });
+
+/**--------------Close Btn------------------------- */
+
+let closeBtn = document.querySelector(".close_popup");
+let showClass = document.querySelector(".btn_close-popup");
+
+function showFunction() {
+  showClass.classList.toggle("show");
+}
+
+closeBtn.addEventListener("click", showFunction);
