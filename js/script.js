@@ -67,3 +67,13 @@ function showFunction() {
 }
 
 closeBtn.addEventListener("click", showFunction);
+
+/**--------------Open POP UP------------------------------- */
+let openPopup = document.querySelector(".link-start");
+let application = document.querySelector(".application");
+
+function showPopup() {
+  application.classList.add("show");
+}
+
+openPopup.addEventListener("click", showPopup);
