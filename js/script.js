@@ -56,24 +56,3 @@ $(document).ready(function () {
     ],
   });
 });
-
-/**--------------Close Btn------------------------- */
-
-let closeBtn = document.querySelector(".close_popup");
-let showClass = document.querySelector(".btn_close-popup");
-
-function showFunction() {
-  showClass.classList.toggle("show");
-}
-
-closeBtn.addEventListener("click", showFunction);
-
-/**--------------Open POP UP------------------------------- */
-let openPopup = document.querySelector(".link-start");
-let application = document.querySelector(".application");
-
-function showPopup() {
-  application.classList.add("show");
-}
-
-openPopup.addEventListener("click", showPopup);
