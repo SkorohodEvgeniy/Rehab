@@ -1170,6 +1170,70 @@ input[type="submit"] {
   color: #707070;
 }
 
+/*---------Page FAQ---------------------------------*/
+.faq {
+  /* Accordion*/
+  /* Accordion END*/
+}
+.faq .accordion {
+  padding: 50px;
+  /* Accordion arrow*/
+}
+.faq .accordion__block {
+  margin-bottom: 20px;
+}
+.faq .accordion__text {
+  padding-top: 10px;
+  display: none;
+}
+.faq .accordion__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  min-height: 48px;
+  background: #F4F4F4;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.faq .accordion__title::before, .faq .accordion__title::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 23px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.faq .accordion__title::before {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  right: 16px;
+}
+.faq .accordion__title::after {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  right: 8px;
+}
+.faq .accordion__title.active::before, .faq .accordion__title.active::after {
+  background-color: #0069B4;
+}
+.faq .accordion__title.active::before {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+.faq .accordion__title.active::after {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
 /*----Footer(Липкий Footer)---------*/
 .wrapper {
   min-height: 100%;

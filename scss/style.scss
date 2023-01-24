@@ -1359,6 +1359,92 @@ input {
   }
 }
 
+/*---------Page FAQ---------------------------------*/
+
+.faq {
+
+  /* Accordion*/
+  .accordion {
+    padding: 50px;
+
+    &__block {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      padding-top: 10px;
+      display: none;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      min-height: 48px;
+      background: #F4F4F4;
+      border-radius: 4px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    /* Accordion arrow*/
+    &__title::before,
+    &__title::after {
+      content: "";
+      width: 10px;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      top: 23px;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__title::before {
+      -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
+      right: 16px;
+    }
+
+    &__title::after {
+      -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+      right: 8px;
+    }
+
+    &__title.active::before,
+    &__title.active::after {
+      background-color: #0069B4;
+    }
+
+    &__title.active::before {
+      -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+    }
+
+    &__title.active::after {
+      -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
+    }
+  }
+
+
+  /* Accordion END*/
+
+}
+
+
 /*----Footer(Липкий Footer)---------*/
 
 .wrapper {
