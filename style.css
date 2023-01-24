@@ -233,7 +233,7 @@ input[type="submit"] {
   background-color: #fff;
   position: fixed;
   z-index: 100;
-  top: 35%;
+  top: 50%;
   left: 50%;
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
