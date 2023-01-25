@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header menu-->
+      <header class="header">
+        <div class="_container">
+          <div class="header__body">
+            <a href="/" class="header__logo">
+              <img src="img/svg/logo.svg" alt="logo" />
+            </a>
+            <div class="header__text">
+              <div class="header__text-title">Школа Реабилитолог</div>
+              <p class="header__text-subtitle">
+                Национальный провайдер обучения в области реабилитации,
+                остеопатии и психотерапии
+              </p>
+            </div>
+            <hr />
+            <div class="header__btn">
+              <a href="#Онлайн курсы" class="header__btn-link btn__red"
+                >Онлайн-курсы
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.50001 5C4.41864 5 4.33719 4.96742 4.27506 4.90233L1.09325 1.56902C0.968918 1.43877 0.968918 1.22785 1.09325 1.09769C1.21758 0.967521 1.41891 0.967438 1.54316 1.09769L4.50001 4.19534L7.45687 1.09769C7.5812 0.967438 7.78253 0.967438 7.90678 1.09769C8.03103 1.22794 8.03111 1.43885 7.90678 1.56902L4.72497 4.90233C4.66284 4.96742 4.58139 5 4.50001 5Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                </svg>
+              </a>
+              <div class="header__btn-menu">
+                <ul>
+                  <li><a href="#">Физическая Реаблилитация</a></li>
+                  <li><a href="#">Прикладная Кинезиология</a></li>
+                  <li><a href="#">Акупунктура</a></li>
+                  <li><a href="#">Остеопатические техники</a></li>
+                  <li><a href="#">Психология</a></li>
+                  <li><a href="#">Психотерапия</a></li>
+                  <li><a href="#">Травматерапия</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a href="about.html" class="header__link">О нас</a></li>
+                <li><a href="faq.html" class="header__link">FAQ</a></li>
+                <li>
+                  <a href="contacts.html" class="header__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__phone">
+              <div class="header__phone-title">(бесплатно по Украине)</div>
+              <a href="tel:0800303300">0 <span>800</span> 303 300</a>
+            </div>
+            <div class="header__lang">
+              <ul>
+                <li class="l-ua"><a href="#">UA</a></li>
+                <li class="l-ru"><a href="#">RU</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="breadcrumbs">
+          <div class="_container">
+            <div class="breadcrumbs__body">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">/</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="contacts__page">
+          <div class="_container">
+            <div class="contacts__body">
+              <div class="contacts__content">
+                <div class="email__heading section__title">
+                  <h2>Контакты</h2>
+                </div>
+                <div class="contacts__data">
+                  <div class="contacts__email contacts__data-body">
+                    <img
+                      src="img/svg/email.svg"
+                      alt="email"
+                      class="contacts__data-icon"
+                    />
+                    <div class="contacts__data-box">
+                      <div class="contacts__data-title">Email</div>
+                      <a
+                        href="mailto:info@rehabilitolog.com"
+                        class="contacts__data-email"
+                        >info@rehabilitolog.com</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contacts__phone contacts__data-body">
+                    <img
+                      src="img/svg/phone.svg"
+                      alt="phone"
+                      class="contacts__data-icon"
+                    />
+                    <div class="contacts__data-box">
+                      <div class="contacts__data-title">Телефон</div>
+                      <a href="tel:0800330346" class="contacts__data-email"
+                        >0 800 330 346</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contacts__adress contacts__data-body">
+                    <img
+                      src="img/svg/adress.svg"
+                      alt="adress"
+                      class="contacts__data-icon"
+                    />
+                    <div class="contacts__data-box">
+                      <div class="contacts__data-title">Адрес</div>
+                      <a href="tel:0800330346" class="contacts__data-email"
+                        >ул. Евгения Сверстюка, 11-А</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.572991212966!2d30.598458015896096!3d50.44905389534626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cff19d96e68d%3A0xe44f8d17d7ad1c8c!2z0LLRg9C70LjRhtGPINCE0LLQs9C10L3QsCDQodCy0LXRgNGB0YLRjtC60LAsIDEx0JAsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1674651744976!5m2!1sru!2sua"
+                  width="100%"
+                  height="406"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__middle">
+          <div class="_container">
+            <div class="footer__middle-columns">
+              <div class="footer__middle-column">
+                <div class="footer__middle-column--1">
+                  <div class="footer__logo">
+                    <a href="#" class="header__logo">
+                      <img src="img/svg/logo.svg" alt="logo" />
+                    </a>
+                    <div class="header__text">
+                      <div class="header__text-title">Школа Реабилитолог</div>
+                      <p class="header__text-subtitle">
+                        Национальный провайдер обучения в области<br />
+                        реабилитации, остеопатии и психотерапии
+                      </p>
+                    </div>
+                  </div>
+                  <div class="footer__contact">
+                    <ul>
+                      <li>
+                        <a href="tel:0800330346"
+                          ><img src="img/svg/iPhone.svg" alt="iPhone" /> 0 800
+                          330 346</a
+                        >
+                      </li>
+                      <li>
+                        <a href="mailto:info@rehabilitolog.com">
+                          <img src="img/svg/Mail.svg" alt="Mail" />
+                          info@rehabilitolog.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer__social">
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><img src="img/svg/Facebook.svg" alt="Facebook"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><img src="img/svg/YouTube.svg" alt="YouTube"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><img src="img/svg/Instagram.svg" alt="Instagram"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion one footer__middle-column--23">
+                  <div class="footer__middle-column--2">
+                    <h5 class="footer__middle--title accordion__title">
+                      клиентам
+                    </h5>
+                    <ul class="accordion__text">
+                      <li><a href="about.html">О нас</a></li>
+                      <li><a href="courses.html">Все курсы</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="contacts.html">Контакты</a></li>
+                      <li><a href="map.html">Карта сайта</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__middle-column--3">
+                    <h5 class="footer__middle--title accordion__title">
+                      Курсы
+                    </h5>
+                    <ul class="accordion__text">
+                      <li><a href="#">Прикладная Кинезиология</a></li>
+                      <li><a href="#">Спорт</a></li>
+                      <li><a href="#">Физическая Реаблилитация</a></li>
+                      <li><a href="#">Питание</a></li>
+                      <li><a href="#">Остеопатические техники</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__middle-column--4">
+                <form action="#">
+                  <h4 class="footer__form-title">Подпишитесь на новости</h4>
+                  <div class="footer__form-fields">
+                    <input type="text" placeholder="Имя*" />
+                    <input type="tel" placeholder="Телефон*" />
+                    <input type="email" placeholder="Email*" />
+                  </div>
+                  <div class="email__form-text">
+                    * - поля обязательные для заполнения
+                  </div>
+                  <div class="form__btn-div">
+                    <input
+                      type="submit"
+                      class="form__btn"
+                      value="Подписаться"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="box__blue"></div>
+        </div>
+        <div class="footer__down">
+          <div class="footer__down-copyright">
+            Все права защищены © 2022 - Школа Реабилитолог
+          </div>
+        </div>
+      </footer>
+      <div class="pop-up">
+        <div class="application">
+          <div class="application__body">
+            <div class="application__body-content">
+              <h3 class="application__body-content--title">Оставить заявку</h3>
+              <div class="email__form">
+                <form action="#">
+                  <div class="email__form-inputs">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Имя*"
+                    />
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="Телефон*"
+                    />
+                  </div>
+                  <div class="email__form-text">
+                    * - поля обязательные для заполнения
+                  </div>
+                  <div class="email__form-links">
+                    Нажимая кнопку «отправить», вы соглашаетесь с условиями
+                    <a href="#">договора-оферты</a> и
+                    <a href="#">политикой конфиденциальности</a>.
+                  </div>
+                  <input type="submit" value="Отправить" class="btn__red" />
+                </form>
+              </div>
+            </div>
+            <div class="application__body-img">
+              <img src="img/popup/pop-up-1.jpg" alt="application" />
+              <span class="close_popup">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.281671 12.3616C-0.0931452 12.7365 -0.0930875 13.3441 0.281787 13.7189C0.656661 14.0937 1.26439 14.0937 1.6392 13.7188L7.00012 8.35738L12.3615 13.7183C12.7363 14.0931 13.3441 14.0931 13.7189 13.7183C14.0937 13.3436 14.0937 12.7358 13.7189 12.361L8.35743 6.99998L13.7185 1.63837C14.0932 1.26352 14.0932 0.655835 13.7183 0.281056C13.3435 -0.093733 12.7357 -0.0936757 12.3609 0.28117L6.99993 5.64268L1.63855 0.281631C1.26371 -0.0931764 0.65597 -0.0931764 0.281134 0.281631C-0.0937113 0.656449 -0.0937113 1.26413 0.281134 1.63895L5.64272 7.00008L0.281671 12.3616Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bravo thanks btn_close-popup">
+          <div class="thanks__body">
+            <div class="thanks__body-content">
+              <h3 class="thanks__body-content--title">Ура!</h3>
+              <p class="thanks__body-content--text">
+                Вы успешно подписались <br />
+                на наши новости
+              </p>
+              <button class="btn__blue close_popup">Закрыть</button>
+            </div>
+            <div class="thanks__body-img">
+              <img src="img/popup/pop-up-2.jpg" alt="thanks" />
+              <span class="close_popup">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.281671 12.3616C-0.0931452 12.7365 -0.0930875 13.3441 0.281787 13.7189C0.656661 14.0937 1.26439 14.0937 1.6392 13.7188L7.00012 8.35738L12.3615 13.7183C12.7363 14.0931 13.3441 14.0931 13.7189 13.7183C14.0937 13.3436 14.0937 12.7358 13.7189 12.361L8.35743 6.99998L13.7185 1.63837C14.0932 1.26352 14.0932 0.655835 13.7183 0.281056C13.3435 -0.093733 12.7357 -0.0936757 12.3609 0.28117L6.99993 5.64268L1.63855 0.281631C1.26371 -0.0931764 0.65597 -0.0931764 0.281134 0.281631C-0.0937113 0.656449 -0.0937113 1.26413 0.281134 1.63895L5.64272 7.00008L0.281671 12.3616Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="thanks btn_close-popup">
+          <div class="thanks__body">
+            <div class="thanks__body-content">
+              <h3 class="thanks__body-content--title">Спасибо!</h3>
+              <p class="thanks__body-content--text">
+                Заявка успешно сформирована,<br />
+                менеджер с Вами свяжется
+              </p>
+              <button class="btn__blue close_popup">Закрыть</button>
+            </div>
+            <div class="thanks__body-img">
+              <img src="img/popup/pop-up-1--1.jpg" alt="thanks" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+  <script src="js/script.js"></script>
+</html>
