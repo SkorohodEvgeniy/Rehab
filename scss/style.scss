@@ -1452,6 +1452,9 @@ input {
 
 /*---------Page Contacts-------------------------*/
 .contacts {
+  &__page{
+    margin-bottom: 66px;
+  }
   &__body {
     display: -webkit-box;
     display: -ms-flexbox;

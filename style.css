@@ -1242,6 +1242,9 @@ input[type="submit"] {
 }
 
 /*---------Page Contacts-------------------------*/
+.contacts__page {
+  margin-bottom: 66px;
+}
 .contacts__body {
   display: -webkit-box;
   display: -ms-flexbox;
