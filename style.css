@@ -1172,6 +1172,7 @@ input[type="submit"] {
 
 /*---------Page FAQ---------------------------------*/
 .faq {
+  padding: 26px 0 70px;
   /* Accordion 2ver*/
   /* Accordion 2ver END*/
   /* Accordion END*/
@@ -1184,7 +1185,7 @@ input[type="submit"] {
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  transition-duration: .3s;
   margin-bottom: 10px;
 }
 .faq__inner.is-open {
@@ -1203,8 +1204,31 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.faq__inner-header.is-open::after {
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
+}
+.faq__inner-header:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url("/img/svg/icon-arrow-up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
 }
 .faq__inner-body {
   padding: 25px 0 32px 0;

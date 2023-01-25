@@ -1363,43 +1363,87 @@ input {
 /*---------Page FAQ---------------------------------*/
 
 .faq {
+  padding: 26px 0 70px;
 
   /* Accordion 2ver*/
-&__inner {
-  background: #f4f4f4;
-  border: 5px solid transparent;
-  border-radius: 4px;
-  padding: 0 32px;
-  transition-property: border-color;
-  transition-duration: .3s;
-  margin-bottom: 10px;
-}
-&__inner.is-open {
-  background-color: #f4f4f4;
-}
-&__inner-header {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1;
-  color: #1D1D1B;
-  position: relative;
-  padding: 28px 30px 28px 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-&__inner-body {
-  padding: 25px 0 32px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-  display: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.4;
-  color: #335371;
-}
-/* Accordion 2ver END*/
+  &__inner {
+    background: #f4f4f4;
+    border: 5px solid transparent;
+    border-radius: 4px;
+    padding: 0 32px;
+    -webkit-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    margin-bottom: 10px;
+  }
+
+  &__inner.is-open {
+    background-color: #f4f4f4;
+  }
+
+  &__inner-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #1D1D1B;
+    position: relative;
+    padding: 28px 30px 28px 0;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    &.is-open {
+      &::after {
+        -webkit-transform: translateY(-50%) rotate(0deg);
+            -ms-transform: translateY(-50%) rotate(0deg);
+                transform: translateY(-50%) rotate(0deg);
+      }
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+      transform: translateY(-50%) rotate(180deg);
+      background-image: url("/img/svg/icon-arrow-up.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      -o-transition-property: transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      -webkit-transition-duration: .3s;
+      -o-transition-duration: .3s;
+      transition-duration: .3s;
+    }
+  }
+
+  &__inner-body {
+    padding: 25px 0 32px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #335371;
+  }
+
+  /* Accordion 2ver END*/
 
 
   /* Accordion END*/
