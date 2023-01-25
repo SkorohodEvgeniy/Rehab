@@ -2060,10 +2060,10 @@ input[type="submit"] {
   }
   .header__btn-link {
     font-size: 14px;
-    min-width: 140px;
+    min-width: 125px;
   }
   .header__btn-link svg {
-    right: 8px;
+    right: 4px;
   }
   .header__phone {
     margin-left: auto;
