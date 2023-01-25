@@ -63,6 +63,13 @@
       }
     }
   }
+
+  .contacts {
+
+    &__content {
+      margin-right: 15px;
+    }
+  }
 }
 
 
@@ -560,6 +567,16 @@
   .box__blue {
     display: none;
   }
+
+  /*----Page Contacts---*/
+  .contacts {
+    &__body {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+
+  }
+
 }
 
 @media(max-width:560px) {
