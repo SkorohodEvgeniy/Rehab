@@ -455,6 +455,8 @@
 
 @media(max-width:768px) {
   .first {
+    min-height: 526px;
+    
     &__img {
       left: 0;
       opacity: .1;
@@ -468,7 +470,7 @@
       -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
       flex: 0 1 100%;
-      padding-top: 93px;
+      padding-top: 0;
     }
   }
 
@@ -776,6 +778,11 @@
     }
   }
 
+  .first {
+    &__title {
+      font-size: 34px;
+    }
+  }
   .online {
     &__text {
       h2 {

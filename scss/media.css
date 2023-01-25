@@ -353,6 +353,9 @@
   }
 }
 @media (max-width: 768px) {
+  .first {
+    min-height: 526px;
+  }
   .first__img {
     left: 0;
     opacity: .1;
@@ -364,7 +367,7 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
-    padding-top: 93px;
+    padding-top: 0;
   }
 
   .cources__content-text {
@@ -578,6 +581,10 @@
   }
   .header__burger {
     margin-left: auto;
+  }
+
+  .first__title {
+    font-size: 34px;
   }
 
   .online__text h2 {
