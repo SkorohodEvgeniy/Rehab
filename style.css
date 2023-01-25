@@ -1872,6 +1872,10 @@ input[type="submit"] {
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
   }
+
+  .main {
+    padding-top: 185px;
+  }
 }
 @media (max-width: 992px) {
   .cources__content-text--title {
