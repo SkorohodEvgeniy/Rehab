@@ -2005,6 +2005,17 @@ input[type="submit"] {
     left: 35%;
   }
 
+  .faq__inner {
+    padding: 0 15px;
+  }
+  .faq__inner-header {
+    font-size: 17px;
+    padding: 19px 40px 19px 0;
+  }
+  .faq__inner-body {
+    font-size: 14px;
+  }
+
   .footer__middle-column {
     padding-left: 15px;
     padding-right: 15px;

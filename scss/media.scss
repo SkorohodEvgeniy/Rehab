@@ -714,6 +714,22 @@
     }
   }
 
+  .faq {
+    &__inner {
+      padding: 0 15px;
+
+      &-header {
+        font-size: 17px;
+        padding: 19px 40px 19px 0;
+      }
+
+      &-body {
+        font-size: 14px;
+      }
+    }
+
+  }
+
   .footer {
     &__middle {
       &-column {
