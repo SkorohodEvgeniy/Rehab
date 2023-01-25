@@ -234,9 +234,7 @@
     }
 
     &__text {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 68%;
-      flex: 0 0 68%;
+      flex: 1 0 65%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -594,7 +592,7 @@
 
   .first {
     &__title {
-      font-size: 38px;
+      font-size: 36px;
     }
 
     &__text {
@@ -765,7 +763,6 @@
 @media(max-width:375px) {
   .header {
     &__phone {
-      margin-left: 0;
       padding: 0;
 
       &-title {
