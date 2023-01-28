@@ -1,3 +1,4 @@
+/*------------------Burger-------------*/
 let headerBurger = document.querySelector(".header__burger");
 let headerMenu = document.querySelector(".header__menu");
 let body = document.getElementsByTagName("body");
@@ -9,7 +10,7 @@ function toggleBurgerMenu() {
 
 headerBurger.addEventListener("click", toggleBurgerMenu);
 
-/** Btn menu */
+/**--------------Btn menu--------------*/
 
 let clickBtn = document.querySelector(".header__btn-link");
 
@@ -19,7 +20,7 @@ clickBtn.addEventListener("click", function () {
     .classList.toggle("open");
 });
 
-/* Accordion*/
+/*------------ Accordion---------------*/
 $(document).ready(function () {
   $(".accordion__title").click(function (event) {
     if ($(".accordion").hasClass("one")) {
